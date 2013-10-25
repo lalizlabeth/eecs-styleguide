@@ -1,0 +1,37 @@
+@import 'colors';
+
+@mixin sidebar() {
+  margin-right: 15px;
+  width: 250px;
+  height: 100%;
+  background: #f7f7f7;
+  float: left;
+  box-shadow: 0 0 4px 2px #d3d3d3;
+  nav {
+    width: 100%;
+  }
+  li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    &:hover {
+      background: #eee;
+    }
+    &.active {
+      a {
+        color: #f7f7f7;
+      }
+      border-bottom: none;
+      background: #009bd1;
+    }
+    a {
+      display: block;
+      font: 300 24px "oswald", sans-serif;
+      color: #414242;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      padding: 20px;
+      width: 210px;
+    }
+  }
+}

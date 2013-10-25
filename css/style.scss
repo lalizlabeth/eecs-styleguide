@@ -1,0 +1,46 @@
+/* style.css */
+@import 'mixins/colors';
+@import 'mixins/typography';
+@import 'mixins/sidebar';
+
+.logo {
+  padding: 28px 0;
+  text-align: center;
+  text-transform: uppercase;
+  h1 {
+    font-family: "oswald";
+    font-size: 60px;
+    line-height: 70px;
+  }
+  h2 {
+    @include heading(medium);
+  }
+}
+
+.sidebar {
+  @include sidebar();
+}
+
+h1 {
+  @include heading(xxlarge);
+}
+
+h2 {
+  @include heading(xlarge);
+}
+
+h3 {
+  @include heading(large);
+}
+
+h4 {
+  @include heading(medium);
+}
+
+h5 {
+  @include heading(small);
+}
+
+h6 {
+  @include heading(xsmall);
+}
